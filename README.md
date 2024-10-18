@@ -1,19 +1,33 @@
 # Cronjob Schedules in Docker Containers
 
 ## Objectives:
-Many users had problems trying to run scripts using crontab jobs inside Docker Containers while running in Windows OS. The objective of this repository is to solve this problem using a different Dockerfile build that can be used to run a simple python script inside Docker Containers while following cronjob schedules.
+Many users had problems trying to run scripts using crontab jobs inside Docker Containers. This is a simple project that demonstrates running cron jobs inside a Docker container. This setup allows for scheduled tasks to be executed without relying on the host machine's cron service, providing a portable and easily configurable environment.
+
+## Features
+
+- **Cron job scheduling**: Automate tasks with cron inside a Docker container.
+- **Customizable jobs**: Easily add or modify cron jobs.
+- **Lightweight Docker setup**: Minimal configuration to get started.
+
+## Prerequisites
+
+- [Docker](https://www.docker.com/get-started)
+- Basic understanding of cron scheduling
 
 ## Run this project
 
-*   Install Docker and run the following commands:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ianmm2d/Docker-Cron-Scheduler.git
+   cd docker-cron-scheduler
+   ```
 
-Builds the project:
-```bash
-docker build -t app .
-```
+2. **Build the Docker image:**
+    ```bash
+    docker build -t app .
+    ```
 
-Runs the job:
-
-```bash
-docker run -d app
-```
+3. **Run the container:**
+    ```bash
+    docker run -d app
+    ```
