@@ -1,4 +1,4 @@
-# Cronjob Schedules in Docker Containers
+# Docker Cron Scheduler
 
 ## Objectives:
 Many users had problems trying to run scripts using crontab jobs inside Docker Containers. This is a simple project that demonstrates running cron jobs inside a Docker container. This setup allows for scheduled tasks to be executed without relying on the host machine's cron service, providing a portable and easily configurable environment.
